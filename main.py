@@ -1,5 +1,5 @@
 from attack import attack_caesar
-from file_handler import read_text_file, load_known_words
+from file_handler import read_text_file, load_known_words, write_text_file
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     print(f"Piket: {result['best_score']}")
     print(f"Fjalet e gjetura: {result['best_matches']}")
     print("\nTeksti i dekriptuar:")
-    print(result["best_text"])
+    write_text_file("decrypted_text.txt", result["best_text"])
 
     print("\n--- TE GJITHA PROVAT ---")
     for attempt in result["all_attempts"]:
