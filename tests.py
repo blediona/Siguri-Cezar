@@ -43,4 +43,4 @@ def run_tests():
         print("STATUSI: SULMI DËSHTOI! Nuk u gjetën mjaftueshëm fjalë.")
 
 if __name__ == "__main__":
-    run_tests() 
+    run_tests()
