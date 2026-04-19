@@ -26,6 +26,7 @@ def main():
     print(f"Fjalet e gjetura: {result['best_matches']}")
     print("\nTeksti i dekriptuar:")
     write_text_file("decrypted_text.txt", result["best_text"])
+    print(result["best_text"])
 
     print("\n--- TE GJITHA PROVAT ---")
     for attempt in result["all_attempts"]:
